@@ -6,24 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Karla:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="app">
+    <div class="app">
         <div class="header">
-            <h1>Generate a</h1>
-            <h2>random password</h2>
+            <div>
+                <h1> 
+                    <span class="top"> Generate a </span> <br>
+                    <span class="bottom"> random password</span>
+                </h1>
+            </div>
             <div>
                 <p>Never use an insecure password again.</p>
             </div>
         </div>
         <div class="content">
-            <button>Generate passwords</button>
+            <button id="btn" onclick="password()">Generate passwords</button>
             <div class="line"></div>
             <div class="box">
-                <p id="pass-one"></p>
-                <p id="pass-two"></p>
+                <div>
+                <p class="pass" id="pass-one" onclick="password()"></p>
+                </div>
+                <div>
+                <p class="pass" id="pass-two" onclick="password()"></p>
+                </div>
             </div>
         </div>  
-    </section>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
