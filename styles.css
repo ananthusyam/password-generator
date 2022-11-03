@@ -66,3 +66,7 @@ button {
     color: #55F991;
     padding-top: 15px;
 }
+.btns {
+    display: flex;
+    gap: 25px;
+}
