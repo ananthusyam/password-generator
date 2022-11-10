@@ -7,34 +7,33 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Karla:wght@800&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
 <body>
     <div class="app">
         <div class="header">
-            <div>
-                <h1> 
+            <div class="title">
+                <p> 
                     <span class="top"> Generate a </span> <br>
                     <span class="bottom"> random password</span>
-                </h1>
+                </p>
             </div>
-            <div>
+            <div class="sub-title">
                 <p>Never use an insecure password again.</p>
             </div>
         </div>
         <div class="content">
             <div class="btns">
-            <button id="btn" onclick="password()">Generate passwords</button>
-            <button id="newbtn" onclick="newpassword()">New password</button>
+                <button id="btn" onclick="password()">Generate passwords</button>
+                <button id="newbtn" onclick="newpassword()">New password</button>
             </div>
             <div class="line"></div>
             <div class="box">
                 <div>
-                <p class="pass" id="pass-one" onclick="password()"></p>
+                    <p class="pass" id="pass-one" onclick="password()"></p>
                 </div>
                 <div>
-                <p class="pass" id="pass-two" onclick="password()"></p>
+                    <p class="pass" id="pass-two" onclick="password()"></p>
                 </div>
             </div>
         </div>  

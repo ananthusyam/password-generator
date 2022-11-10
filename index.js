@@ -4,7 +4,7 @@ let isAlive = true;
 let live = true;
 const passone = [];
 const passtwo = [];
-console.log(characters.length)
+
 let passOneEl = document.getElementById("pass-one")
 let passTwoEl = document.getElementById("pass-two")
 function password() {
