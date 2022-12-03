@@ -27,6 +27,7 @@
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.025em;
+    min-width: 370px;
 }
 
 .top {
@@ -41,7 +42,7 @@
     color: #D5D4D8;
     font-family: "Inter",sans-serif;
     font-weight: 400;
-    
+    font-size: 20px;
 }
 
 button {
@@ -57,13 +58,12 @@ button {
 
 .line {
     border: 1px solid #2F3E53;
-    width: 450px;
+    width: 445px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    gap: 35px; 
     align-items: center;
 }
 
@@ -83,7 +83,14 @@ button {
     padding-top: 15px;
 }
 
+.align {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 370px;
+}
+
 .btns {
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }

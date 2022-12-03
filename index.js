@@ -2,38 +2,27 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 "/"];
 let isAlive = true;
 let live = true;
-const passone = [];
-const passtwo = [];
+
 
 let passOneEl = document.getElementById("pass-one")
 let passTwoEl = document.getElementById("pass-two")
 function password() {
-if(isAlive === true) {
-for(let i = 0; i < 8; i++) {
-    passone.push(characters[Math.floor(Math.random()*characters.length)]);
-    passOneEl.textContent = passone.join('')
-    isAlive = false
-}
-}
-
-if(live === true){
-for(let i = 0; i < 8; i++) {
-    
-    passtwo.push(characters[Math.floor(Math.random()*characters.length)]);
-    passTwoEl.textContent = passtwo.join('')
-    live = false;
-}
-}
-}
-function newpassword() {
-    const newPassOne = [];
-    const newPassTwo = [];
-    for(let i = 0; i < 8; i++) {
-        newPassOne.push(characters[Math.floor(Math.random()*characters.length)]);
-        passOneEl.textContent = newPassOne.join('')    
+    const passone = [];
+    const passtwo = [];
+    if(isAlive === true) {
+        for(let i = 0; i < 8; i++) {
+            passone.push(characters[Math.floor(Math.random()*characters.length)]);
+            passOneEl.textContent = passone.join('')
+           
+        }
     }
-    for(let i = 0; i < 8; i++) {
-        newPassTwo.push(characters[Math.floor(Math.random()*characters.length)]);
-        passTwoEl.textContent = newPassTwo.join('')    
+
+    if(live === true){
+        for(let i = 0; i < 8; i++) {
+            
+            passtwo.push(characters[Math.floor(Math.random()*characters.length)]);
+            passTwoEl.textContent = passtwo.join('')
+            
+        }
     }
 }
